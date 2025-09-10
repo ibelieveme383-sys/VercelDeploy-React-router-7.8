@@ -9,7 +9,7 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export function loader({ context }: Route.LoaderArgs) {
-  return { message: "Welcome to React Router!" };
+  return { message: new Date().toISOString() };
 }
 
 export default function Home({ loaderData }: Route.ComponentProps) {
