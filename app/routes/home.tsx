@@ -16,6 +16,6 @@ export function meta({}: Route.MetaArgs) {
 //   return { message: new Date().toISOString() };
 // }
 
-export default function Home({ loaderData }: Route.ComponentProps) {
+export default function Home() {
   return <Welcome message={new Date().toISOString()} />;
 }
