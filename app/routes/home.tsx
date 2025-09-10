@@ -17,5 +17,5 @@ export function meta({}: Route.MetaArgs) {
 // }
 
 export default function Home({ loaderData }: Route.ComponentProps) {
-  return <Welcome message={handle.buildtime} />;
+  return <Welcome message={new Date().toISOString()} />;
 }
