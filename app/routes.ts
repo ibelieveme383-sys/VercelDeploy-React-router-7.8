@@ -1,3 +1,10 @@
 import { type RouteConfig, index } from "@react-router/dev/routes";
 
-export default [index("routes/home.tsx")] satisfies RouteConfig;
+export default [
+ {
+    path: "/",                 // root page
+    file: "routes/home.tsx",
+    prerender: () => ["/"],    
+    ssr: false
+  },
+] satisfies RouteConfig;
